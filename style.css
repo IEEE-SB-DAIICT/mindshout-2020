@@ -546,7 +546,8 @@ input:focus {
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
           font-size: 14px; } }
-    .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+    .classy-nav-container .classy-navbar .classynav ul li.current-item a::after,
+    .classy-nav-container .classy-navbar .classynav ul li a.current-item::after {
       content: '';
       position: absolute;
       width: 70%;

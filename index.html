@@ -119,10 +119,11 @@
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
-                  <li class="current-item"><a href="./index.html">Home</a></li>
+                  <li><a href="#hero-1">Home</a></li>
                   <li><a href="#about_section">About</a></li>
                   <li><a href="#why_mindshout">Why MindShout?</a></li>
                   <li><a href="#sponsors_section">Sponsors</a></li>
+                  <li><a href="#exam_format">Exam Format</a></li>
                   <li><a href="#contact_numbers">Contact</a></li>
                 </ul>
 
@@ -154,7 +155,7 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
-    <section class="welcome-area">
+    <section class="welcome-area" id="hero-1">
       <div class="welcome-slides owl-carousel">
         <!-- Single Welcome Slide -->
         <div class="single-welcome-slide">
@@ -540,7 +541,10 @@
     <!-- ***** Sponsors Area End ***** -->
 
     <!-- ***** Portfolio Single Area Start ***** -->
-    <section class="uza-portfolio-single-area section-padding-80">
+    <section
+      class="uza-portfolio-single-area section-padding-80"
+      id="exam_format"
+    >
       <div class="container">
         <div class="section-heading text-center">
           <!-- <h2>Exam Format</h2> -->
@@ -616,14 +620,14 @@
     <!-- ***** Portfolio Single Area End ***** -->
 
     <!-- ***** Blog Area Start ***** -->
-    <section class="uza-blog-area">
+    <section class="uza-blog-area" id="contact_numbers">
       <!-- Background Curve -->
       <div class="blog-bg-curve">
         <img src="./img/core-img/curve-4.png" alt="" />
       </div>
 
       <!-- CTA Area Start -->
-      <div class="uza-cta-area section-padding-0-80" id="contact_numbers">
+      <div class="uza-cta-area section-padding-0-80">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-lg-7">
@@ -808,5 +812,14 @@
     <script src="./js/uza.bundle.js"></script>
     <!-- Active js -->
     <script src="./js/default-assets/active.js"></script>
+    <!-- Active Section NavMenu Highlight -->
+    <script src="https://unpkg.com/active-menu-link@1.1.8/dist/active-menu-link.js"></script>
+    <script>
+      let options = {
+        itemTag: 'li',
+        activeClass: 'current-item',
+      };
+      new ActiveMenuLink('.classynav', options);
+    </script>
   </body>
 </html>
