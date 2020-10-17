@@ -2,3 +2,57 @@ nav .nav-brand img {
   width: 100%;
   /* display: none; */
 }
+
+#exam_format div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ******* */
+/* 13.0 Service CSS */
+/* .prizes-worth {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+}
+.prizes-worth .service-icon {
+  background-color: #e7f2fd;
+  width: 145px;
+  height: 110px;
+  font-size: 42px;
+  color: #303030;
+  text-align: center;
+  line-height: 110px;
+  border-radius: 80px 200px 200px 362px;
+  margin: 0 auto 30px;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.prizes-worth h5 {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 15px;
+  -webkit-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  font-weight: 600;
+}
+.prizes-worth:focus .service-icon,
+.prizes-worth:hover .service-icon {
+  background-color: #1583e9;
+  color: #ffffff;
+  -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+  box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+}
+.prizes-worth:focus h5,
+.prizes-worth:hover h5,
+.prizes-worth:focus h2,
+.prizes-worth:hover h2 {
+  color: #1583e9;
+  transform: scale(1.1);
+}
+ */
