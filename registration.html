@@ -55,7 +55,7 @@
     <title>MindShout</title>
   </head>
   <body>
-    <h1 style="text-align: center;">MindShout'20 Registration</h1>
+    <h1 style="text-align: center;">MindShout 1.0 Registration</h1>
     <br>
     <!--Registration form-->
     <!--<form class="form-inline">
@@ -78,13 +78,13 @@
       <div class="form-group row">
           <label for="example-email-input" class="col-2 col-form-label">E-mail:</label>
           <div class="col-5">
-              <input class="form-control" type="email" id="inputEmail" maxlength="50" style="width: 75%" required>
+              <input class="form-control" type="email" id="inputEmail" maxlength="50" style="width: fit-content" required>
           </div>
       </div>
       <div class="form-group row">
         <label for="example-email-input" class="col-2 col-form-label">School Name:</label>
         <div class="col-5">
-            <input  class="form-control" type="text" id="inputSchool" maxlength="54" style="width: 75%" required>
+            <input  class="form-control" type="text" id="inputSchool" maxlength="54" style="width: fit-content" required>
         </div>
       </div>
       <div class="form-group row">
@@ -218,11 +218,10 @@
       
       //get request to get URL for uploaded file
       thisRef.getDownloadURL().then(function(url) {
-      console.log(url);
-      input.ImageUrl=url;
-      })
-
-      }
+        console.log(url);
+        input.ImageUrl=url;
+      });
+    }
       
 
       //create a functions to push
