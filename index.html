@@ -42,108 +42,6 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./css/custom-style.css" />
-    <style>
-      @import "compass/css3";
-
-      @import url("https://fonts.googleapis.com/css?family=Lato");
-
-      $background: #e74c3c;
-      $file-upload-color: #c0392b;
-      $file-upload-size: 300px;
-
-      * {
-          margin: 0;
-          padding: 0;
-          @include box-sizing(border-box);
-      }
-      body { 
-          font-family: Lato, Arial; 
-          color: #fff;
-          padding: 55px 25px;
-          background-color: $background;
-      }
-      h1 {
-          font-weight: normal;
-          font-size: 40px;
-          font-weight: normal;
-          text-transform: uppercase;
-          span { 
-              font-size: 13px;
-              display: block;
-              padding-left: 4px;
-          }
-      }
-      p {
-        margin-top: 200px;
-        a {
-          text-transform: uppercase;
-          text-decoration: none;
-          display: inline-block;
-          color: #fff;
-          padding: 5px 10px;
-          margin: 0 5px;
-          background-color: darken($file-upload-color, 2);
-          @include transition(all 0.2s ease-in);
-          &:hover {
-            background-color: darken($file-upload-color, 5);
-          }
-        }
-      }
-      .custom-file-upload-hidden {
-          display: none;
-          visibility: hidden;
-          position: absolute;
-          left: -9999px;
-      }
-      .custom-file-upload {
-          display: block;
-          width: auto;
-          font-size: 16px;
-          margin-top: 30px;
-          //border: 1px solid #ccc;
-          label {
-              display: block;
-              margin-bottom: 5px;
-          }
-      }
-
-      .file-upload-wrapper {
-          position: relative; 
-          margin-bottom: 5px;
-          //border: 1px solid #ccc;
-      }
-      .file-upload-input {
-          width: $file-upload-size;
-          color: #fff;
-          font-size: 16px;
-          padding: 11px 17px; 
-          border: none;
-          background-color: $file-upload-color; 
-          @include transition(all 0.2s ease-in); 
-          float: left; /* IE 9 Fix */
-          &:hover, &:focus { 
-              background-color: darken($file-upload-color, 5);
-              outline: none; 
-          }
-      }
-      .file-upload-button {
-          cursor: pointer; 
-          display: inline-block; 
-          color: #fff;
-          font-size: 16px;
-          text-transform: uppercase;
-          padding: 11px 20px; 
-          border: none;
-          margin-left: -1px;  
-          background-color: darken($file-upload-color, 10); 
-          float: left; /* IE 9 Fix */
-          @include transition(all 0.2s ease-in);
-          &:hover {
-              background-color: darken($file-upload-color, 20);
-          }
-      }
-
-    </style>
 
     <title>MindShout</title>
   </head>
@@ -232,7 +130,7 @@
 
                 <!-- Get A Quote -->
                 <div class="get-a-quote ml-4 mr-3">
-                  <a href="#" class="btn uza-btn">Register Now!</a>
+                  <a href="/registration.html" class="btn uza-btn">Register Now!</a>
                 </div>
 
                 <!-- Login / Register -->
@@ -290,10 +188,10 @@
                     </h5>
                     <h5 data-animation="fadeInUp" data-delay="400ms">
                       Prelims on
-                      <span style="color: #1583e9">29th November</span>
+                      <span style="color: #1583e9">27th December</span>
                     </h5>
                     <a
-                      href="#"
+                      href="/registration.html"
                       class="btn uza-btn btn-2"
                       data-animation="fadeInUp"
                       data-delay="700ms"
@@ -666,13 +564,13 @@
               <ul>
                 <li>
                   <h4>
-                    <span style="color: #1583e9">Prelims</span> : 29 November
-                    2020
+                    <span style="color: #1583e9">Prelims</span> : 27th December 2020
+                
                   </h4>
                 </li>
                 <li>
                   <h4>
-                    <span style="color: #1583e9">Mains</span> : 27 December 2020
+                    <span style="color: #1583e9">Mains</span> : 10th January 2021
                   </h4>
                 </li>
               </ul>
@@ -749,14 +647,14 @@
     <!-- ***** Portfolio Single Area End ***** -->
 
     <!--Registration form-->
-    <form class="form-inline">
-      <!--<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-      <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>-->
-    </form>
-    <div class="custom-file-upload">
-      <h1>FireBase Storage Example<span style="font-size: 1em; margin-left: 2%"class="glyphicon glyphicon-fire"></span></h1>
+    <!--<form class="form-inline">
+      <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+      <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+    </form>-->
+    <!--<div class="custom-file-upload">
+      <h1>FireBase Storage Example  <span style="font-size: 1em; margin-left: 2%"class="glyphicon glyphicon-fire"></span></h1>
       <input type="file" onchange="previewFile()" id="files" name="files[]" multiple />
-    <div>
+    <div>-->
     <!--Registration form End-->
 
     <!-- FAQs -->
@@ -838,7 +736,7 @@
       </div>
 
       <!-- CTA Area Start -->
-      <div class="uza-cta-area section-padding-0-80">
+      <!--<div class="uza-cta-area section-padding-0-80">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-lg-7">
@@ -863,7 +761,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!-- CTA Area End -->
 
     <!-- ***** Footer Area Start ***** -->
