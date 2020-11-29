@@ -25,7 +25,7 @@
 
     <meta name="title" content="MindShout" />
     <meta name="description" content="MindShout, IEEE SB DAIICT" />
-    <meta name="author" href="" content="Meet Patel, Hitesh Goyal" />
+    <meta name="author" href="" content="Meet Patel, Adit Shah" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://ieee.daiict.ac.in" />
@@ -274,17 +274,15 @@
       form.addEventListener('submit', function (evt) {
           evt.preventDefault();
           firebasePush(input);
-
-          RedirectsBack();
+          
+          //shows alert if everything went well.	         
+          //window.location = "./index.html";
+          return alert('You have been registered successfully');
+          window.location = "./index.html";
 
       })
     }
 
-    function RedirectsBack()
-    {
-      alert('You have been registered successfully !');
-      window.location = './index.html';
-    }
     </script>
 
     <!-- jQuery js -->
