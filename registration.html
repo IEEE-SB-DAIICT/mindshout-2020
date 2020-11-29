@@ -276,9 +276,12 @@
           firebasePush(input);
           
           //shows alert if everything went well.	         
-          //window.location = "./index.html";
-          return alert('You have been registered successfully');
-          window.location = "./index.html";
+          alert('You have been registered successfully');
+
+          //redirect to main page after 1 second
+          setTimeout(function(){
+            window.location.href = './index.html';
+         }, 1000);
 
       })
     }
