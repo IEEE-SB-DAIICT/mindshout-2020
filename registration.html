@@ -97,11 +97,11 @@
       <div class="form-group row">
         <label for="example-email-input" class="col-2 col-form-label">Standard :</label>
         <select class="form-control" id="inputStd" style="width: fit-content;">
-          <option>8th</option>
-          <option>9th</option>
-          <option>10th</option>
-          <option>11th</option>
-          <option>12th</option>
+          <option value="8th">8th</option>
+          <option value="9th">9th</option>
+          <option value="10th">10th</option>
+          <option value="11th">11th</option>
+          <option value="12th">12th</option>
         </select>
       </div>
       <div class="form-group row">
@@ -126,13 +126,9 @@
         <label style="margin-left: 1%;">Please attach scanned photo of your school id:<br>(that contains your photograph, standard and name) <span class="glyphicon glyphicon-fire"></span></label>
         <input type="file" onchange="previewFile()" id="files" name="files[]" multiple required />
       <div>
-      <!--<div class="custom-file-upload">
-        <h1>FireBase Storage Example<span style="font-size: 1em; margin-left: 2%"class="glyphicon glyphicon-fire"></span></h1>
-        <input type="file" onchange="previewFile()" id="files" name="files[]" multiple />
-      <div>-->
 
       <div class="text-center">
-          <button type="submit" class="btn btn-primary"> Register </button>
+          <a href="./index.html"><button type="submit" class="btn btn-primary" id="register"> Register </button></a>
       </div>   
     </form>
     <!--Registration form Ends-->
@@ -178,8 +174,31 @@
       input.inputSchool = form.querySelector('#inputSchool');
       input.inputdob = form.querySelector('#inputdob');
 
-      var e = document.getElementById("inputStd");
-      input.inputStd = e.options[e.selectedIndex].text;
+
+      //collecting inputStd from the selection list
+      (function() {
+          
+          // get references to select list and display text box
+          var sel = document.getElementById('inputStd');
+
+
+          function getSelectedOption(sel) {
+              var opt;
+              for ( var i = 0, len = sel.options.length; i < len; i++ ) {
+                  opt = sel.options[i];
+                  if ( opt.selected === true ) {
+                      break;
+                  }
+              }
+              return opt;
+          }
+          
+          document.getElementById('register').onclick = function () {
+              // access text property of selected option
+              input.inputStd = sel.options[sel.selectedIndex].text;
+          }
+      }());
+
 
       input.inputCity = form.querySelector('#inputCity');
       input.inputState = form.querySelector('#inputState');
@@ -256,9 +275,15 @@
           evt.preventDefault();
           firebasePush(input);
 
-          //shows alert if everything went well.
-          return alert('You have been registered successfully');
+          RedirectsBack();
+
       })
+    }
+
+    function RedirectsBack()
+    {
+      alert('You have been registered successfully !');
+      window.location = './index.html';
     }
     </script>
 
