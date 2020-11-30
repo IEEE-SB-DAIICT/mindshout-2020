@@ -6,4 +6,37 @@
     label.col-2.col-form-label{
         font-size:10px;
     }
+    #upload-label{
+        font-size:10px;
+        margin-left:1%;
+    }
+    #ifestlogo{
+        height: 50px;
+        width:50px;
+    }
+    #logodiv{
+        width:15%;
+    }
+    #voyagediv{
+        width:85%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #upload-label{
+        margin-left:1%;
+    }
+    #ifestlogo{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    #logodiv{
+        width:25%;
+    }
+    #voyagediv{
+        width:75%;
+    }
+    #MainHeading{
+        font-size:54px;
+    }
 }
