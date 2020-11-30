@@ -1,0 +1,9 @@
+@media only screen and (max-width: 768px) {
+    #side-image
+    {
+        display: none;
+    }
+    label.col-2.col-form-label{
+        font-size:10px;
+    }
+}
