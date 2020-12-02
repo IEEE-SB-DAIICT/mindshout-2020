@@ -39,34 +39,18 @@
     <!-- Favicon -->
     <link rel="icon" href="./img/mindshout/MindShoutLogo.ico" />
 
-    <!-- Core Stylesheet -->
-    <!--<link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/mobilestyles.css" />
-    <link rel="stylesheet" href="./css/custom-style.css" />-->
-
-    <!-- Required for Registration page template-->
-		<link rel="stylesheet" href="fonts/linearicons/style.css">
-		<link rel="stylesheet" href="css/registration/style.css">
-    <style>
-      .col-form-label{
-        margin-left:2%;
-      }
-    </style>
-
-
-    <!-- Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <!-- CSS files-->
+    <link rel="stylesheet" href="css/registration/style.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <title>MindShout</title>
   </head>
   <body>
-    <!--<h1 style="text-align: center;">MindShout 1.0 Registration</h1>-->
     <div class="wrapper">
 			<div class="inner">
 				<img src="img/mindshout/image-1.png" alt="" class="image-1">
         <form class="registration-form">
-          <h3>Mindshout 1.0</h3>
+          <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 5vh;text-transform: none;">MindShout 1.0</h3>
 					<div class="form-holder">
 						<span class="lnr lnr-user"></span>
 						<input type="text" class="form-control" id="inputName" placeholder="Name" required>
@@ -77,18 +61,18 @@
           </div>
           <div class="form-holder">
 						<span class="lnr lnr-envelope"></span>
-						<input type="email" class="form-control" id="inputEmail" placeholder="E-mail id" required>
+						<input type="email" class="form-control" id="inputEmail" placeholder="E-mail Id" required>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-pencil"></span>
 						<input type="text" class="form-control" id="inputSchool" placeholder="School" required>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-calendar-full"></span>
 						<input type="text" class="form-control" id="inputdob" placeholder="Birth-date (DD/MM/YYYY)" required>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-database"></span>
             <select class="form-control" id="inputStd" style="width: fit-content;" required>
               <option value="default">Standard</option>
               <option value="8th">8th</option>
@@ -99,15 +83,15 @@
             </select>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-home"></span>
 						<input type="text" class="form-control" id="inputCity" placeholder="City" required>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-map-marker"></span>
 						<input type="text" class="form-control" id="inputState" placeholder="State" required>
           </div>
           <div class="form-holder">
-						<span class="lnr lnr-lock"></span>
+						<span class="lnr lnr-location"></span>
 						<input type="text" class="form-control" id="inputCountry" placeholder="Country" required>
           </div>
           <div class="form-holder">
@@ -117,71 +101,6 @@
               <br><br><input type="file" onchange="previewFile()" id="files" name="files[]" multiple required />
             </div>
 					</div>
-          
-          <!--<div class="form-group row">
-              <label for="example-email-input" class="col-2 col-form-label">Name:</label>
-              <div class="col-5">
-                  <input  class="form-control" type="text" id="inputName" maxlength="26" style="width: fit-content;"  required>
-              </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">Mobile No:</label>
-            <div class="col-5">
-                <input class="form-control" type="text" id="inputPhone" maxlength="15" style="width: fit-content;" required >
-            </div>
-          </div>
-          <div class="form-group row">
-              <label for="example-email-input" class="col-2 col-form-label">E-mail:</label>
-              <div class="col-5">
-                  <input class="form-control" type="email" id="inputEmail" maxlength="50" style="width: fit-content" required>
-              </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">School Name:</label>
-            <div class="col-5">
-                <input  class="form-control" type="text" id="inputSchool" maxlength="54" style="width: fit-content" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">Birth-date :</label>
-            <div class="col-5">
-                <input  class="form-control" type="text" id="inputdob" maxlength="26" placeholder="DD/MM/YYYY" style="width: fit-content;" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">Std :</label>
-            <div class="col-5">
-              <select class="form-control" id="inputStd" style="width: fit-content;">
-                <option value="8th">8th</option>
-                <option value="9th">9th</option>
-                <option value="10th">10th</option>
-                <option value="11th">11th</option>
-                <option value="12th">12th</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">City:</label>
-            <div class="col-5">
-                <input  class="form-control" type="text" id="inputCity" maxlength="40" style="width: fit-content;" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">State:</label>
-            <div class="col-5">
-                <input  class="form-control" type="text" id="inputState" maxlength="40" style="width: fit-content;" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label">Country:</label>
-            <div class="col-5">
-                <input  class="form-control" type="text" id="inputCountry" maxlength="40" style="width: fit-content;" required>
-            </div>
-          </div>-->
-          <!--<div class="form-group row" id="upload-label">
-            <label>Please attach scanned photo of your school id:<br>(that contains your photograph, standard and name) <span class="glyphicon glyphicon-fire"></span></label>
-            <input type="file" onchange="previewFile()" id="files" name="files[]" multiple required />
-          <div>-->
           <div class="text-center">
               <a href="./index.html"><button type="submit" class="btn btn-primary" id="register"> Register </button></a>
           </div>   
